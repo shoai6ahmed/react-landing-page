@@ -7,7 +7,6 @@ import StatSection from './components/StatSection';
 import PricingSection from './components/PricingSection';
 import ReviewSection from './components/ReviewSection';
 import ActionSection from './components/ActionSection';
-import Banner from "./components/Banner";
 
 function App() {
   return (
@@ -16,9 +15,6 @@ function App() {
       <Header />
       <HeroSection />
       <ClientSection />
-
-      <Banner title="Our Services" />
-
       <FeatureSection />
       <StatSection />
       <PricingSection />
