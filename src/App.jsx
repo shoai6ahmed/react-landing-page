@@ -19,8 +19,6 @@ function App() {
 
       <Banner title="Our Services" />
 
-      <Banner title="About Us" />
-
       <FeatureSection />
       <StatSection />
       <PricingSection />
