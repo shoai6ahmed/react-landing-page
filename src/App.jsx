@@ -7,6 +7,7 @@ import StatSection from './components/StatSection';
 import PricingSection from './components/PricingSection';
 import ReviewSection from './components/ReviewSection';
 import ActionSection from './components/ActionSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <PricingSection />
       <ReviewSection />
       <ActionSection />
+      <Footer />
     </>
   );
 }
