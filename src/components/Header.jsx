@@ -6,7 +6,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import siteLogo from '../assets/site-logo.svg';
 
 const navigation = [
-  { name: 'Home', href: '/' },
+  { name: 'Home', href: '#home' },
   { name: 'Clients', href: '#clients' },
   { name: 'Features', href: '#features' },
   { name: 'Marketplace', href: '#marketplace' },
@@ -20,10 +20,10 @@ export default function Header() {
 
   return (
 
-    <header>
+    <header className="sticky top-0 z-50 bg-white shadow">
         <nav aria-label="Global" className="flex items-center justify-between py-4 px-6 lg:px-8">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img src={siteLogo} alt="Site Logo" className="h-12 w-auto" />
             </a>
@@ -55,7 +55,7 @@ export default function Header() {
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <a href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                 <img src={siteLogo} alt="Site Logo" className="h-12 w-auto" />
               </a>

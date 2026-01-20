@@ -1,6 +1,6 @@
 export default function ClientSection() {
   return (
-    <div id="clients" className="bg-white pt-15 dark:bg-gray-900">
+    <div id="clients" className="bg-white pt-15 dark:bg-gray-900 scroll-mt-15">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg/8 font-semibold text-gray-900 dark:text-white">
           Trusted by the world’s most innovative teams

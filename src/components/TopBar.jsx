@@ -1,6 +1,6 @@
 export default function TopBar() {
   return (
-    <div className="flex flex-col sm:flex-row relative isolate justify-center items-center gap-3 sm:gap-6 overflow-hidden bg-gray-800 px-3 sm:px-6 py-4 sm:py-3">
+    <div id="home" className="flex flex-col sm:flex-row relative isolate justify-center items-center gap-3 sm:gap-6 overflow-hidden bg-gray-800 px-3 sm:px-6 py-4 sm:py-3">
         <p className="text-sm/6 text-white text-center">
           <strong className="font-semibold">GeneriCon 2023</strong>
           <svg viewBox="0 0 2 2" aria-hidden="true" className="mx-2 inline size-0.5 fill-current">
