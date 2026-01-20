@@ -7,10 +7,11 @@ import siteLogo from '../assets/site-logo.svg';
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Product', href: '/' },
-  { name: 'Features', href: '/' },
-  { name: 'Marketplace', href: '/' },
-  { name: 'Company', href: '/' },
+  { name: 'Clients', href: '#clients' },
+  { name: 'Features', href: '#features' },
+  { name: 'Marketplace', href: '#marketplace' },
+  { name: 'Pricing', href: '#pricing' },
+  { name: 'Reviews', href: '#reviews' },
 ]
 
 export default function Header() {
