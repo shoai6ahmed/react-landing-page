@@ -46,7 +46,7 @@ export default function Header() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm/6 font-semibold rounded-full px-5 py-2 bg-primary text-white hover:bg-primary">
+            <a href="#" className="text-sm/6 font-semibold rounded-full px-5 py-2 bg-primary text-white hover:bg-secondary">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
           </div>

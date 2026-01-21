@@ -70,7 +70,7 @@ export default function PricingSection() {
           >
             <h3
               id={tier.id}
-              className={classNames(tier.featured ? 'text-primary' : 'text-primary', 'text-base/7 font-semibold')}
+              className={classNames(tier.featured ? 'text-secondary' : 'text-primary', 'text-base/7 font-semibold')}
             >
               {tier.name}
             </h3>
@@ -99,7 +99,7 @@ export default function PricingSection() {
                 <li key={feature} className="flex gap-x-3">
                   <CheckIcon
                     aria-hidden="true"
-                    className={classNames(tier.featured ? 'text-primary' : 'text-primary', 'h-6 w-5 flex-none')}
+                    className={classNames(tier.featured ? 'text-secondary' : 'text-primary', 'h-6 w-5 flex-none')}
                   />
                   {feature}
                 </li>
@@ -110,8 +110,8 @@ export default function PricingSection() {
               aria-describedby={tier.id}
               className={classNames(
                 tier.featured
-                  ? 'bg-primary text-white shadow-xs hover:bg-primary focus-visible:outline-primary'
-                  : 'text-primary inset-ring inset-ring-indigo-200 hover:inset-ring-indigo-300 focus-visible:outline-primary',
+                  ? 'bg-primary text-white shadow-xs hover:bg-secondary focus-visible:outline-primary'
+                  : 'text-primary inset-ring inset-ring-indigo-200 hover:inset-ring-secondary focus-visible:outline-primary',
                 'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
               )}
             >
