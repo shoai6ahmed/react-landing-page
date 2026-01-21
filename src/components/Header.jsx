@@ -40,13 +40,13 @@ export default function Header() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900 hover:text-indigo-600">
+              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900 hover:text-primary">
                 {item.name}
               </a>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm/6 font-semibold rounded-full px-5 py-2 bg-indigo-600 text-white hover:bg-indigo-500">
+            <a href="#" className="text-sm/6 font-semibold rounded-full px-5 py-2 bg-primary text-white hover:bg-primary">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
           </div>

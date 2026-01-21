@@ -45,7 +45,7 @@ export default function PricingSection() {
         />
       </div>
       <div className="mx-auto max-w-4xl text-center">
-        <h2 className="text-base/7 font-semibold text-indigo-600">Pricing</h2>
+        <h2 className="text-base/7 font-semibold text-primary">Pricing</h2>
         <p className="mt-2 text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-6xl">
           Choose the right plan for you
         </p>
@@ -70,7 +70,7 @@ export default function PricingSection() {
           >
             <h3
               id={tier.id}
-              className={classNames(tier.featured ? 'text-indigo-400' : 'text-indigo-600', 'text-base/7 font-semibold')}
+              className={classNames(tier.featured ? 'text-primary' : 'text-primary', 'text-base/7 font-semibold')}
             >
               {tier.name}
             </h3>
@@ -99,7 +99,7 @@ export default function PricingSection() {
                 <li key={feature} className="flex gap-x-3">
                   <CheckIcon
                     aria-hidden="true"
-                    className={classNames(tier.featured ? 'text-indigo-400' : 'text-indigo-600', 'h-6 w-5 flex-none')}
+                    className={classNames(tier.featured ? 'text-primary' : 'text-primary', 'h-6 w-5 flex-none')}
                   />
                   {feature}
                 </li>
@@ -110,8 +110,8 @@ export default function PricingSection() {
               aria-describedby={tier.id}
               className={classNames(
                 tier.featured
-                  ? 'bg-indigo-500 text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-indigo-500'
-                  : 'text-indigo-600 inset-ring inset-ring-indigo-200 hover:inset-ring-indigo-300 focus-visible:outline-indigo-600',
+                  ? 'bg-primary text-white shadow-xs hover:bg-primary focus-visible:outline-primary'
+                  : 'text-primary inset-ring inset-ring-indigo-200 hover:inset-ring-indigo-300 focus-visible:outline-primary',
                 'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
               )}
             >
