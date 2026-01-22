@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
 
-    <header className="sticky top-0 z-50 bg-white shadow">
+    <header className="relative lg:sticky lg:top-0 z-50 bg-white dark:bg-gray-900 shadow">
         <nav aria-label="Global" className="flex items-center justify-between py-4 px-6 lg:px-8">
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
@@ -40,7 +40,7 @@ export default function Header() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900 hover:text-primary">
+              <a key={item.name} href={item.href} className="text-sm/6 font-semibold dark:text-white dark:hover:text-gray-400 text-gray-900 hover:text-primary">
                 {item.name}
               </a>
             ))}
