@@ -1,3 +1,5 @@
+import DarkToggle from './DarkToggle';
+
 export default function TopBar() {
   return (
     <div id="home" className="flex flex-col sm:flex-row relative isolate justify-center items-center gap-3 sm:gap-6 overflow-hidden bg-gray-800 px-3 sm:px-6 py-4 sm:py-3">
@@ -14,6 +16,8 @@ export default function TopBar() {
         >
           Register <span aria-hidden="true">&rarr;</span>
         </a>
+        <DarkToggle />
+
     </div>
   );
 }

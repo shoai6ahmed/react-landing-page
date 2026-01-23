@@ -4,6 +4,7 @@
   --color-primary: #4f39f6;
   --color-secondary: #615fff;
 } 
+@variant dark (&:where(.dark, .dark *));
 
 html {
   scroll-behavior: smooth;
