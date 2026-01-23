@@ -25,7 +25,7 @@ export default function DarkToggle() {
       {dark ? (
         <SunIcon className="w-6 h-6 text-yellow-400" />
       ) : (
-        <MoonIcon className="w-6 h-6 text-white" />
+        <MoonIcon className="w-6 h-6 text-gray-900" />
       )}
     </button>
   );

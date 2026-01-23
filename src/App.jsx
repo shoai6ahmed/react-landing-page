@@ -19,8 +19,8 @@ function App() {
       <FeatureSection />
       <StatSection />
       <PricingSection />
-      <ReviewSection />
       <ActionSection />
+      <ReviewSection />
       <Footer />
     </>
   );
