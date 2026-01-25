@@ -1,6 +1,8 @@
+import RegisterButton from "./RegisterButton";
+
 export default function TopBar() {
   return (
-    <div id="home" className="flex flex-col sm:flex-row relative isolate justify-center items-center gap-3 sm:gap-6 bg-gray-50 px-6 py-3 sm:px-3.5 dark:bg-gray-900 dark:after:pointer-events-none dark:after:absolute dark:after:inset-x-0 dark:after:bottom-0 dark:after:h-px dark:after:bg-white/10">
+    <div id="home" className="flex flex-col sm:flex-row overflow-hidden relative isolate justify-center items-center gap-3 sm:gap-6 bg-gray-50 px-6 py-3 sm:px-3.5 dark:bg-gray-900 dark:after:pointer-events-none dark:after:absolute dark:after:inset-x-0 dark:after:bottom-0 dark:after:h-px dark:after:bg-white/10">
       <div
         aria-hidden="true"
         className="absolute top-1/2 left-[max(-7rem,calc(50%-52rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl"
@@ -26,19 +28,16 @@ export default function TopBar() {
         />
       </div>
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-        <p className="text-sm/6 text-gray-900 dark:text-gray-100">
+        <p className="text-center text-sm/6 text-gray-900 dark:text-gray-100">
           <strong className="font-semibold">GeneriCon 2023</strong>
           <svg viewBox="0 0 2 2" aria-hidden="true" className="mx-2 inline size-0.5 fill-current">
             <circle r={1} cx={1} cy={1} />
           </svg>
           Join us in Denver from June 7 – 9 to see what’s coming next.
         </p>
-        <a
-          href="#"
-          className="flex-none rounded-full bg-gray-900 px-3.5 py-2 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 dark:bg-white/10 dark:inset-ring-white/20 dark:hover:bg-white/15 dark:focus-visible:outline-white"
-        >
-          Register now <span aria-hidden="true">&rarr;</span>
-        </a>
+        <div className="hidden lg:flex">
+          <RegisterButton />
+        </div>
       </div>
     </div>
   );

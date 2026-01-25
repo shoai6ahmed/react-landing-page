@@ -6,6 +6,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import siteLogoWhite from '../assets/site-logo-white.svg';
 import siteLogoDark from '../assets/site-logo-dark.svg';
 import DarkToggle from './DarkToggle';
+import LoginButton from './LoginButton';
+import RegisterButton from "./RegisterButton";
 
 const navigation = [
   { name: 'Home', href: '#home' },
@@ -48,14 +50,14 @@ export default function Header() {
               </a>
             ))}
           </div>
-          <DarkToggle />
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm/6 font-semibold rounded-full px-5 py-2 bg-primary text-white hover:bg-secondary">
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
+          
+          <div className="hidden lg:flex">
+            <DarkToggle />
+            <LoginButton />
           </div>
           
         </nav>
+
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-gray-950 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -65,6 +67,7 @@ export default function Header() {
                 <img src={siteLogoWhite} alt="Site Logo" className="dark:block hidden h-12 w-auto" />
                 <img src={siteLogoDark} alt="Site Logo" className="dark:hidden block h-12 w-auto" />
               </a>
+              <DarkToggle />
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
@@ -87,13 +90,9 @@ export default function Header() {
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
-                  <a
-                    href="/"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 dark:text-white dark:hover:bg-gray-900"
-                  >
-                    Log in
-                  </a>
+                <div className="lg:hidden py-3">
+                  <LoginButton />
+                  <RegisterButton />
                 </div>
               </div>
             </div>
