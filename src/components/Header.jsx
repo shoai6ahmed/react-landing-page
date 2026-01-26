@@ -3,8 +3,7 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import siteLogoWhite from '../assets/site-logo-white.svg';
-import siteLogoDark from '../assets/site-logo-dark.svg';
+import SiteLogo from './SiteLogo'
 import DarkToggle from './DarkToggle';
 import LoginButton from './LoginButton';
 import RegisterButton from "./RegisterButton";
@@ -26,13 +25,11 @@ export default function Header() {
 
     <header className="relative lg:sticky lg:top-0 z-50 bg-white dark:bg-gray-900 dark:border-b dark:border-gray-800 shadow dark:shadow-none">
         <nav aria-label="Global" className="flex items-center justify-between lg:justify-evenly p-5 lg:py-0">
+          
           <div className="flex">
-            <a href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img src={siteLogoWhite} alt="Site Logo" className="dark:block hidden h-12 w-auto" />
-              <img src={siteLogoDark} alt="Site Logo" className="dark:hidden block h-12 w-auto" />
-            </a>
+            <SiteLogo />
           </div>
+
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -63,11 +60,7 @@ export default function Header() {
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-gray-950 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
 
-              <a href="/" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img src={siteLogoWhite} alt="Site Logo" className="dark:block hidden h-12 w-auto" />
-                <img src={siteLogoDark} alt="Site Logo" className="dark:hidden block h-12 w-auto" />
-              </a>
+              <SiteLogo />
 
               <div className="flex items-center gap-3">
               <DarkToggle />

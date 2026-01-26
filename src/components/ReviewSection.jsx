@@ -1,5 +1,5 @@
-import siteLogoWhite from '../assets/site-logo-white.svg';
-import siteLogoDark from '../assets/site-logo-dark.svg';
+import SiteLogoWhite from '../assets/site-logo-white.svg';
+import SiteLogoDark from '../assets/site-logo-dark.svg';
 
 export default function ReviewSection() {
   return (
@@ -9,12 +9,12 @@ export default function ReviewSection() {
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
         <img
           alt=""
-          src={siteLogoWhite}
+          src={SiteLogoWhite}
           className="mx-auto h-14 dark:block hidden"
         />
         <img
           alt=""
-          src={siteLogoDark}
+          src={SiteLogoDark}
           className="mx-auto h-14 dark:hidden block"
         />
         <figure className="mt-10">
