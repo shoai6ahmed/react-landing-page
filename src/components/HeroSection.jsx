@@ -13,7 +13,7 @@ export default function HeroSection() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 dark:text-white sm:text-7xl">
-              Data to enrich your online business
+              Enrich your Software Development business
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 dark:text-gray-300 sm:text-xl/8">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
